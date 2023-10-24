@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@keyframes pulse {
+  from {background-color:#77b4ea;}
+  to {background-color: chartreuse;}
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.flexible-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+img{
+  grid-row-start: span 2 ;
+  grid-row-end: 3 ;
+}
+
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
+  background: #77b4ea;
+  color: #f7eeee;
+}
+
+h1 {
+  font-size: 100px;
+  color: black;
+  font-family:'Gabarito','Courier New', Courier, monospace;
+
+}
+
+h2 {
+    font-size: 60px;
+    color: blue;
+    font-family:'Gabarito','Courier New', Courier, monospace;
+} 
+
+h3 {
+    font-size: 40px;
+} 
+
+
+
+
+p {color: rgb(65, 9, 129); 
+    font-size: 20px; 
+    font-style: italic;
+text-align: left;
+
+}
+
+nav a{
+    color: darkolivegreen;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 480px) 
+{
+  body {
+    font-size: 18px;
+    background: #e5b172;
+    color: #000602;
+    
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 30px;
+  }
+  
+
+  #firstpage {font-weight: 900;text-align: left;
+    border-radius: 20px;background-color: rgb(174, 191, 230);}
+    main, body { background-color: rgb(242, 241, 234)}
+    main section { font-weight: bold}
+    
+    section ~ p {background-color: rgb(247, 240, 195);}
+    a:hover{ color: aquamarine;}
+    a:visited{color: brown;}
+    button:hover{
+        color: gold;background-color: black;
+
+}
+}
